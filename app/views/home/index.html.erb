@@ -1,0 +1,10 @@
+<%= javascript_include_tag 'application'%>
+<h1>Quartos recém postados</h1>
+<div class="pages-contact">
+  <a href="">Clique</a>
+</div>
+<ul>
+  <% @rooms.each do |room| %>
+    <li><%= link_to room.complete_name, room %> </li>
+  <% end %>
+</ul>
